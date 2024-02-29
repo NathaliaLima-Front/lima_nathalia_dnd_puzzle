@@ -8,13 +8,14 @@
     <title>Drag and Drop Puzzle Game</title>
 </head>
 <body>
-	<button id="resetBut">Reset</button>
 	<header id="headLine">
 		<h1>drag and drop!</h1>
 		<p>solve the puzzle</p>
 	</header>
 
 	<section id="game-boards">
+		
+		<button id="resetBut">Reset</button>
 	
 		<div class="puzzle-pieces">
 			<img src="images/topLeft0.jpg" class="puzzle-image" alt="top left">
@@ -40,6 +41,21 @@
 			<img id="3" src="images/buttonThree.jpg" draggable="false" alt="thumbnail 3">
 		</nav>
 	</footer>
+
+	<section class="lightbox" id="same_spot">
+        <article>
+            <h3>Ops!</h3>
+            <p>There's already a piece in that position, please try another spot</p>
+        </article>
+    </section>
+
+	<section class="lightbox" id="all_pieces_correct">
+        <article>
+            <h3>Yeah!</h3>
+            <p>You got all the pieces correct and completed the puzzle</p>
+        </article>
+    </section>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
