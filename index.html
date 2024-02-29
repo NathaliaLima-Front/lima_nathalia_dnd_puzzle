@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Drag and Drop Puzzle Game</title>
 </head>
 <body>
+	<button id="resetBut">Reset</button>
+	<header id="headLine">
+		<h1>drag and drop!</h1>
+		<p>solve the puzzle</p>
+	</header>
+
+	<section id="game-boards">
 	
+		<div class="puzzle-pieces">
+			<img src="images/topLeft0.jpg" class="puzzle-image" alt="top left">
+			<img src="images/topRight0.jpg" class="puzzle-image" alt="top right">
+			<img src="images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left">
+			<img src="images/bottomRight0.jpg" class="puzzle-image" alt="bottom right">
+		</div>
+
+		<div class="puzzle-board">
+			<div class="drop-zone tl" id="topLeft"></div>
+			<div class="drop-zone tr" id="topRight"></div>
+			<div class="drop-zone bl" id="bottomLeft"></div>
+			<div class="drop-zone br" id="bottomRight"></div>
+		</div>
+	</section>
+
+	<footer>
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<img id="0" src="images/buttonZero.jpg" draggable="false" alt="thumbnail 0">
+			<img id="1" src="images/buttonOne.jpg" draggable="false" alt="thumbnail 1">
+	    	<img id="2" src="images/buttonTwo.jpg" draggable="false" alt="thumbnail 2">
+			<img id="3" src="images/buttonThree.jpg" draggable="false" alt="thumbnail 3">
+		</nav>
+	</footer>
     <script src="js/main.js"></script>
 </body>
 </html>
