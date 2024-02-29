@@ -26,6 +26,7 @@ body {
 	flex-direction: row;
 	max-width: 900px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .puzzle-pieces, .puzzle-board {
@@ -124,4 +125,49 @@ footer {
 
 #buttonHolder img:hover {
 	opacity:.5;
+}
+
+
+
+
+#resetBut {
+	position: absolute;
+    right: 0;
+    border: 1px solid #b9b9b9;
+    font-size: 15px;
+    color: #fff;
+    background-color: #b9b9b9;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#resetBut:hover {
+	cursor: pointer;
+	border: 1px solid #a1a1a1;
+	background-color: #a1a1a1;
+}
+
+#same_spot,
+#all_pieces_correct {
+	opacity: 0;
+}
+
+#same_spot {
+    background-color: rgb(252 253 189);
+}
+
+#all_pieces_correct {
+    background-color: rgb(189, 253, 199);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+	padding: 0 20px;
+    letter-spacing: 1px;
+	color: #000;
+	opacity: 1;
+    transition: all .5s ease;
 }
